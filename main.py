@@ -6,7 +6,7 @@
 import matplotlib.pyplot as plt 
 
 
-# 🧮 1. Initialisation des paramètres du modèle
+# 1. Initialisation des paramètres du modèle
 
 
 # Nombre total de personnes dans la population (Ville, Pays, ect)
@@ -24,23 +24,23 @@ gamma = 0.1 # Taux de guérison ( à quel point on guérit vite)
 # Nombre total de jours à simuler
 jours = 100
 
-# 🔁 2. Simulation jour par jour
+# 2. Simulation jour par jour
 for jour in range(jours):
 
-    # 📌 On récupère les données du jour précédent (le dernier de chaque liste)
+    # On récupère les données du jour précédent (le dernier de chaque liste)
     s = S[-1]  # personnes en bonne santé hier
     i = I[-1]  # personnes infectées hier
     r = R[-1]  # personnes retirées (guéries) hier
     
-# 🔢 Calcul des nouvelles infections
+# Calcul des nouvelles infections
     # Plus il y a de malades ET de gens sains → plus ça contamine
     nouvelles_infections = beta * s * i / N
 
-# 💊 Calcul des nouvelles guérisons
+# Calcul des nouvelles guérisons
     # Une partie des malades guérissent chaque jour
     nouvelles_guerisons = gamma * i
 
-# 📈 Mise à jour des valeurs pour aujourd’hui (jour courant)
+# Mise à jour des valeurs pour aujourd’hui (jour courant)
     s_next = s - nouvelles_infections
     i_next = i + nouvelles_infections - nouvelles_guerisons
     r_next = r + nouvelles_guerisons
@@ -49,7 +49,7 @@ for jour in range(jours):
     I.append(i_next)
     R.append(r_next)
 
-# 📊 3. Affichage des résultats sous forme de graphique
+# 3. Affichage des résultats sous forme de graphique
 plt.plot(S, label='🟢 Sains')
 plt.plot(I, label='🔴 Infectés')
 plt.plot(R, label='🔵 Guéris')

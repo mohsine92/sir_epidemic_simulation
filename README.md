@@ -1,17 +1,17 @@
-# 🧬 SIR Epidemic Simulation (Python)
+# SIR Epidemic Simulation 
 
 <p>This project is a simulation of a classic epidemiological model called SIR (Susceptible – Infected – Recovered) using Python. It demonstrates how an epidemic spreads through a closed population via a discrete mathematical model. The goal is to understand infection dynamics by translating scientific logic into code.</p>
 
 ![SIR_graphe](https://github.com/user-attachments/assets/6acfd613-b8db-4160-85b3-978e8b31f106)
 
 
-## 🚀 Learning Objectives
+## Learning Objectives
 - Implement a simple mathematical model (SIR) for simulation purposes  
 - Use Python to structure and iterate dynamic systems  
 - Visualize scientific data using Matplotlib  
 - Apply programming tools to solve concrete scientific problems  
 
-## 🧬 Brief Description of the Model
+## Brief Description of the Model
 The SIR model divides a population into 3 states:
 
 | Symbol | Meaning                         |
@@ -27,12 +27,12 @@ Each day, individuals:
 
 The model evolves in discrete time steps (using a Python loop), making it easy to understand and modify.
 
-## 🛠️ Technical Stack
+## Technical Stack
 - Python 3.x  
 - Matplotlib (for visualization)  
 - (Optional) NumPy for vectorization and performance improvements  
 
-## 🔭 Future Developments and Improvements
+## Future Developments and Improvements
 
 This project serves as a foundation to understand epidemiological modeling and numerical simulation. Several enhancements could make it more complete, interactive, and realistic:
 
@@ -59,7 +59,7 @@ This project serves as a foundation to understand epidemiological modeling and n
 
 These improvements help deepen scientific understanding while developing advanced technical skills.
 
-## 📈 How to Run the Project
+## How to Run the Project
 
 Clone the repository:
 

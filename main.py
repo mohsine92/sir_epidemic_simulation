@@ -1,12 +1,4 @@
-# main.py
-# Modèle SIR – Simulation de propagation d'une épidémie
-# Auteur : Mohsine ESSAT
-# Description : Modèle épidémiologique simple SIR codé en Python
-
 import matplotlib.pyplot as plt 
-
-
-# 1. Initialisation des paramètres du modèle
 
 
 # Nombre total de personnes dans la population (Ville, Pays, ect)
